@@ -9,7 +9,7 @@
             <q-list-header>Tasks</q-list-header>
             <q-item>
               <q-item-main label="Jim Doe" />
-              <q-item-side right icon="chat_bubble" />
+              <q-item-side right icon="check" color="green" />
             </q-item>
           </q-list>
     </div>
