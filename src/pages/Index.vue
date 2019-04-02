@@ -8,17 +8,6 @@
         <q-list highlight class="col">
             <q-list-header>Tasks</q-list-header>
             <q-item>
-              <q-item-side>
-                <q-item-tile avatar>
-                  <img src="statics/boy-avatar.png">
-                </q-item-tile>
-              </q-item-side>
-              <q-item-main label="John Doe" />
-              <q-item-side right>
-                <q-item-tile icon="chat_bubble" color="green" />
-              </q-item-side>
-            </q-item>
-            <q-item>
               <q-item-side avatar="statics/linux-avatar.png" />
               <q-item-main label="Jim Doe" />
               <q-item-side right icon="chat_bubble" />
