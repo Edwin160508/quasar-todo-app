@@ -3,11 +3,17 @@
 > WIP
 # Primeiro Passo Instalar cli Quasar
 1- Abrir o terminal 
-    npm install -g quasar-cli /n
+
+    npm install -g quasar-cli br
+    
 2- Baixar o projeto 
+
     npm install
+    
 3- Rodar o projeto
+
     quasar dev
+    
 # Segundo passo Instalar cordova    
 npm install -g cordova
 
