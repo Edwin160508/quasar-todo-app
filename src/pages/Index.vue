@@ -1,8 +1,8 @@
 <template>
   <q-page padding>
     <div class="row">
-      <q-input v-model="text" placeholder="Add new task" class="col" />
-      <q-btn color="primary" size="sm" label="Add"/>
+      <q-input v-model="newTask" placeholder="Add new task" class="col" @keyup.enter="addTask" />
+      <q-btn color="primary" size="sm" label="Add" @click.native="addTask" />
     </div>
     <div class="row">
         <q-list highlight class="col">
@@ -23,7 +23,13 @@
 export default {
   name: 'PageIndex',
   data () {
-    return { tasks: ['Wake up', 'Brush teeth'] }
+    return { tasks: [], newTask: '' }
+  },
+  methods: {
+    addTask () {
+      this.tasks.push(this.newTask)
+      this.newTask = ''
+    }
   }
 }
 </script>
