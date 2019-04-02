@@ -18,7 +18,7 @@
           <q-list-header>Done</q-list-header>
           <q-item v-for="(task, index) in done" :key="index">
             <q-item-main :label="task" />
-            <q-item-side right icon="check" color="green" />
+            <q-item-side right icon="close" color="red" />
           </q-item>
         </q-list>
   </div>
