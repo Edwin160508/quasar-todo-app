@@ -18,7 +18,7 @@
           <q-list-header>Done</q-list-header>
           <q-item v-for="(task, index) in done" :key="index">
             <q-item-main :label="task" />
-            <q-item-side right icon="close" color="red" />
+            <q-item-side right icon="close" color="red" @click.native="deleteTask(index)" />
           </q-item>
         </q-list>
   </div>
@@ -44,6 +44,17 @@ export default {
     moveToDone (index) {
       this.done.push(this.tasks[index])
       this.tasks.splice(index, 1)
+    },
+    deleteTask (index) {
+      this.$q.dialog({
+        title: 'Confirm',
+        message: 'Really delete task?',
+        ok: 'Yes',
+        cancel: 'No'
+      }).then(() => {
+        this.done.splice(index, 1)
+        this.$q.notify('Task was deleted!')
+      }).catch(() => {})
     }
   }
 }
