@@ -3,7 +3,7 @@
 > WIP
 # Primeiro Passo Instalar cli Quasar
 1- Abrir o terminal 
-    npm install -g quasar-cli
+    npm install -g quasar-cli /n
 2- Baixar o projeto 
     npm install
 3- Rodar o projeto
