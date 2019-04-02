@@ -7,8 +7,8 @@
     <div class="row">
         <q-list highlight class="col">
             <q-list-header>Tasks</q-list-header>
-            <q-item>
-              <q-item-main label="Jim Doe" />
+            <q-item v-for="(task, index) in tasks" :key="index">
+              <q-item-main :label="task" />
               <q-item-side right icon="check" color="green" />
             </q-item>
           </q-list>
@@ -21,6 +21,9 @@
 
 <script>
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  data () {
+    return { tasks: ['Wake up', 'Brush teeth'] }
+  }
 }
 </script>
