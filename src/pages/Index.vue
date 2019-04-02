@@ -5,8 +5,8 @@
       <q-btn color="primary" size="sm" label="Add"/>
     </div>
     <div class="row">
-        <q-list highlight>
-            <q-list-header>Recent chats</q-list-header>
+        <q-list highlight class="col">
+            <q-list-header>Tasks</q-list-header>
             <q-item>
               <q-item-side>
                 <q-item-tile avatar>
