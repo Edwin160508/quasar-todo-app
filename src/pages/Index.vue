@@ -27,7 +27,9 @@ export default {
   },
   methods: {
     addTask () {
-      this.tasks.push(this.newTask)
+      if (this.newTask !== '') {
+        this.tasks.push(this.newTask)
+      }
       this.newTask = ''
     }
   }
